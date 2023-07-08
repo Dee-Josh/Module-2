@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-top: 40px;
+    font-family: sans-serif;
+    padding: 0 10px 20px;
+}
+
+header {
+    text-align: center;
+}
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 100px auto 0;
+    width: fit-content;
+}
+.change-width{
+    border: 2px solid black ;
+    background-color: grey;
+    width: 30%;
+    padding: 40px 5px 5px 5px;
+    position: relative;
+}
+
+.new-h2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    border: 2px solid black;
+    border-top: 0;
+    border-right: 0;
+    text-align: center;
+}
+.chicken h2 {
+    background-color: palevioletred;   
+
+}
+
+.beef h2 {
+    background-color: red;
+    color: white;
+    
+}
+
+.shoshi h2 {
+    background-color: yellowgreen;
+    padding: 0 10px;
+}
+
+.Container div div {
+    display: flex;
+    justify-content: right;
+    border: none;
+}
+
+.Container div p {
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 991px){
+
+    .change-width{
+        width: calc(48% - 25px);
+    }
+
+    .shoshi{
+        width: 95%;
+    }    
+}
+
+
+@media screen and (max-width: 767px){
+
+    .Container{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .Container div{
+        margin: 0 auto;
+    }
+    .change-width{
+        width: 90%;
+    }
+}
